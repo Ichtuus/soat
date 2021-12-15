@@ -1,0 +1,30 @@
+@import '_colors';
+@import '_variables';
+@import '_font';
+@import '_marges';
+@import '_utils';
+@import '_button';
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  color: #525252;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 24px 16px 24px;
+  background: none;
+  height: auto;
+
+  @media (max-width: $small) {
+    flex-direction: column;
+    align-items: baseline;
+  }
+}

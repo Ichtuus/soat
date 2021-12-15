@@ -1,0 +1,40 @@
+// :host > header {
+// display: flex;
+// flex: 1 1 100%;
+// flex-wrap: wrap;
+// justify-content: center;
+// vertical-align: middle;
+// color: white;
+// }
+
+// // @media only screen and (min-width: 0px) and (max-width: 250px) {
+// //   :host > header {
+// //     min-height: auto;
+// //     height: 250px;
+// //     padding: 14px;
+// //     background-color: red;
+// //     display: flex;
+// //     flex: 1 1 100%;
+// //     flex-wrap: wrap;
+// //     justify-content: center;
+// //     vertical-align: middle;
+// //     color: white;
+// //     transition: all 1s;
+// //   }
+// // }
+
+// // @media only screen and (max-height: 150px) {
+// //   :host > header {
+// //     padding: 14px;
+// //     background-color: blue;
+// //     display: flex;
+// //     flex: 1 1 100%;
+// //     flex-wrap: wrap;
+// //     justify-content: center;
+// //     vertical-align: middle;
+// //     color: white;
+// //     transition: all 1s;
+// //     position: fixed;
+// //     width: 100%;
+// //   }
+// // }

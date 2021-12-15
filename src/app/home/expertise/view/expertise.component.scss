@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  margin: 24px 0;
+  .expertise {
+    display: flex;
+    justify-content: center;
+    flex: auto;
+    flex-wrap: wrap;
+    min-height: 300px;
+    padding: 34px;
+    & .exp-item {
+      margin: auto;
+      background-image: url('https://i.pinimg.com/originals/56/1d/cb/561dcb757944967248b4a805901a15af.png');
+      background-repeat: repeat;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-font-smoothing: antialiased;
+      padding: 24px;
+      font-size: xx-large;
+      text-transform: uppercase;
+      font-weight: bold;
+      & + div {
+        visibility: hidden;
+      }
+    }
+    &:hover {
+      flex: 1 1 80%;
+      background-color: #dad0c2;
+      .exp-item {
+        visibility: hidden;
+        & + div {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  :host {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,13 @@
+<div class="container">
+  <a class="dashboard-button" [routerLink]="['admin/home']">Dashboard</a>
+  <base-header class="header">
+    <ng-container><base-menu [links]="menu"></base-menu></ng-container>
+
+    <!-- <div class="mb-3"><img src="./assets/logo_small.png" width="200"/></div> -->
+    <base-menu-item [links]="menu"></base-menu-item>
+  </base-header>
+  <main>
+    <ng-content select="body"></ng-content>
+  </main>
+  <base-footer></base-footer>
+</div>

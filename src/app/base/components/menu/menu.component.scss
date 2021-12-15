@@ -1,0 +1,24 @@
+:host:not(base-menu-item) {
+  height: 0;
+  padding: 12px;
+  position: absolute;
+  left: 0;
+  & > .soat-logo {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 2s;
+    cursor: pointer;
+    font-size: 50px;
+  }
+}
+::ng-deep base-menu-item {
+  vertical-align: middle;
+  color: white;
+  span > a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: #f6d3d3;
+    }
+  }
+}

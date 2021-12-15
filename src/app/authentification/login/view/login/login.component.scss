@@ -1,0 +1,26 @@
+:host {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    form {
+      width: 350px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      & .form-group {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 100%;
+        & label,
+        input {
+          flex: 1 1 100%;
+        }
+        & input {
+          height: 44px;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}

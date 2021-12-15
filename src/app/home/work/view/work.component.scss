@@ -1,0 +1,36 @@
+:host {
+  margin: 0 34px;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0;
+    & .work {
+      flex: 1 1 0%;
+      transition: ease-out 2s;
+      h5 {
+        padding: 34px;
+        font-weight: 700;
+        text-shadow: 3px 3px 3px #f6d3d38a;
+        font-size: 42px;
+        color: #ccc;
+        cursor: pointer;
+        // transition: ease-out 1s;
+        height: 0;
+      }
+
+      div {
+        visibility: hidden;
+      }
+      &.active {
+        flex: 1 1 80% !important;
+        height: 100vh;
+        background-color: red !important;
+        div {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

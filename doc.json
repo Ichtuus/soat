@@ -1,0 +1,40 @@
+{
+  "architecture": {
+    "description": "Documentation de l'architecture de l'application",
+    "type": {
+      "fullModuleArchi": {
+        "modules": [
+          {
+            "layout": ["view"]
+          },
+          {
+            "base": {}
+          },
+          {
+            "core": {}
+          },
+          {
+            "shared": {}
+          },
+          {
+            "admin": {}
+          },
+          {
+            "authentification": {
+              "register": ["feature", "view"],
+              "login": ["feature", "view"]
+            }
+          },
+          {
+            "home": {
+              "about": ["feature", "view"],
+              "expertise": ["feature", "view"],
+              "work": ["feature", "view"],
+              "pricing": ["feature", "view"]
+            }
+          }
+        ]
+      }
+    }
+  }
+}
