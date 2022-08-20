@@ -6,9 +6,11 @@
     flex-wrap: wrap;
     text-align: center;
     padding: 0;
+
     & .work {
       flex: 1 1 0%;
       transition: ease-out 2s;
+
       h5 {
         padding: 34px;
         font-weight: 700;
@@ -23,10 +25,12 @@
       div {
         visibility: hidden;
       }
+
       &.active {
         flex: 1 1 80% !important;
-        height: 100vh;
+        height: 500px;
         background-color: red !important;
+
         div {
           visibility: visible;
         }

@@ -2,7 +2,7 @@
   <li
     (click)="selectedWork = work"
     *ngFor="let work of pageOfItems; let index = index"
-    class="work"
+    class="work active"
     [id]="work.name"
     [class.active]="selectedWork == pageOfItems[index]">
     <h5>{{ work.name }}</h5>
@@ -10,4 +10,5 @@
     <div *ngIf="selectedWork">coucou <br /></div>
   </li>
 </ul>
+
 <base-pagination [items]="works" (changePage)="onChangePage($event)"></base-pagination>

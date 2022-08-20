@@ -1,6 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 
-const FIXED_HEADER = 1040;
+const FIXED_HEADER = 450;
 @Component({
   selector: 'view-template',
   templateUrl: './template.component.html',

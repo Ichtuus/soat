@@ -1,8 +1,33 @@
 :host {
-  ul {
+  margin-top: 24px;
+
+  .pagination {
     display: flex;
     justify-content: center;
     list-style: none;
     gap: 44px;
+    margin-top: 24px;
+
+    .page-item {
+
+      .page-link {
+        width: 50px;
+        text-align: center;
+      }
+
+      .page-link::after {
+        width: 0;
+      }
+
+      &.active {
+        background: red;
+        border-radius: 10px 10px 25px 25px;
+      }
+
+      &:hover:not(.first-item, .previous-item, .next-item, .last-item) {
+        background: red;
+        border-radius: 10px 10px 25px 25px;
+      }
+    }
   }
 }

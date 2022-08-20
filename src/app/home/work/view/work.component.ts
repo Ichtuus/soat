@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ViewWorkComponent {
   constructor() {}
-  selectedWork: any;
   pageOfItems!: Array<any>;
 
   works = [
@@ -20,9 +19,12 @@ export class ViewWorkComponent {
     { name: 'seth' },
     { name: 'ocho' },
   ];
+  selectedWork: any = this.works[0];
+
 
   onChangePage(pageOfItems: any) {
     // update current page of items
+    this.selectedWork = pageOfItems[0];
     this.pageOfItems = pageOfItems;
   }
 }

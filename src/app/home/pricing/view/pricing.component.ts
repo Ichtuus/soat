@@ -10,34 +10,34 @@ export class ViewPricingComponent {
   selected = new FormControl();
   serviceList = [
     {
-      name: 'Translation',
-      price: 'US$0.09 per word',
-      desc: '10 GB of storage',
+      name: 'TRANSLATION',
+      price: '25€',
+      desc: 'description',
     },
     {
       name: 'SUBTITLING',
-      price: 'US$7per minute',
-      desc: '10 GB of storage',
+      price: '25€',
+      desc: 'description',
     },
     {
       name: 'REVIEW',
-      price: 'US$0.05 per word',
-      desc: '10 GB of storage',
+      price: '25€',
+      desc: 'description',
     },
     {
       name: 'POST-EDITING',
-      price: 'US$0.07per word',
-      desc: '10 GB of storage',
+      price: '25€',
+      desc: 'description',
     },
     {
       name: 'FRENCH EDITING',
-      price: 'US$0.03 per word',
-      desc: '10 GB of storage',
+      price: '25€',
+      desc: 'description',
     },
     {
       name: 'TRANSCRIPTION',
-      price: 'US$30 per hou',
-      desc: '10 GB of storage',
+      price: '25€ per hour',
+      desc: 'description',
     },
   ];
 }
