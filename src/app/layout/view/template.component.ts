@@ -11,7 +11,7 @@ export class ViewTemplateComponent {
     { name: 'About', path: '#about' },
     { name: 'Expertise', path: '#expertise' },
     { name: 'Work', path: '#work' },
-    { name: 'Pricing', path: '#pricing' },
+    { name: 'Quote', path: '#quote' },
   ];
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
@@ -24,8 +24,8 @@ export class ViewTemplateComponent {
     if (position >= FIXED_HEADER) {
       document.querySelector('span')!.style.visibility = 'visible';
       document.querySelector('span')!.style.opacity = '1';
-      (document.querySelector('base-header') as HTMLElement)!.style.height = '100px';
-      (document.querySelector('base-menu-item') as HTMLElement)!.style.visibility = 'hidden';
+      (document.querySelector('base-header') as HTMLElement)!.style.height = '55px';
+      // (document.querySelector('base-menu-item') as HTMLElement)!.style.visibility = 'hidden';
       (document.querySelector('base-header') as HTMLElement)!.style.width = '100%';
       document.querySelector('span')!.style.color = 'white';
     } else {

@@ -20,12 +20,12 @@
       }
 
       &.active {
-        background: red;
+        background: #f4dfd0;
         border-radius: 10px 10px 25px 25px;
       }
 
       &:hover:not(.first-item, .previous-item, .next-item, .last-item) {
-        background: red;
+        background: #fdefef;
         border-radius: 10px 10px 25px 25px;
       }
     }

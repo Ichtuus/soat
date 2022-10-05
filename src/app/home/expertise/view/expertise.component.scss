@@ -1,35 +1,38 @@
 :host {
   display: flex;
   margin: 24px 0;
+  gap: 60px;
+
   .expertise {
     display: flex;
-    justify-content: center;
-    flex: auto;
-    flex-wrap: wrap;
-    min-height: 300px;
-    padding: 34px;
+    flex: 1 1 0%;
+    flex-direction: column;
+    min-height: 500px;
+    transition: ease-in 200ms;
+    cursor: pointer;
+
     & .exp-item {
-      margin: auto;
-      background-image: url('https://i.pinimg.com/originals/56/1d/cb/561dcb757944967248b4a805901a15af.png');
-      background-repeat: repeat;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-font-smoothing: antialiased;
-      padding: 24px;
+      margin: auto;;
       font-size: xx-large;
       text-transform: uppercase;
       font-weight: bold;
+      text-align: center;
+      border-bottom: 130px solid #f4dfd0;
+
       & + div {
-        visibility: hidden;
+        display: none;
+        padding: 34px;
       }
     }
-    &:hover {
+    &.active {
       flex: 1 1 80%;
       background-color: #f4dfd0;
+
       .exp-item {
-        visibility: hidden;
+        display: none;
+
         & + div {
-          visibility: visible;
+          display: block;
         }
       }
     }

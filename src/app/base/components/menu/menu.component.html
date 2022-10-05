@@ -1,6 +1,16 @@
-<span class="soat-logo">
+<!-- <span class="soat-logo">
   <i class="fa fa-bars fa-md mr-2" aria-hidden="true"></i>
   <ng-container *ngIf="isVisible">
     <base-menu-item [links]="links"></base-menu-item>
   </ng-container>
-</span>
+</span> -->
+
+
+<nav class="fixed-nav-bar">
+  <a class="brand">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Poundexclam.svg/2000px-Poundexclam.svg.png" />
+  </a>
+  <ng-container>
+    <base-menu-item [links]="links"></base-menu-item>
+  </ng-container>
+</nav>

@@ -21,7 +21,7 @@
   }
 }
 
-.price-box {
+.contact-box {
   flex: auto;
   background: white;
   text-align: center;
@@ -46,7 +46,7 @@
   }
 
   & .box-header > .package-type,
-  .box-header > .price {
+  .box-header > .contact {
     flex: 1 1 100%;
   }
 
@@ -54,7 +54,7 @@
     margin: 14px 0;
   }
 
-  & .price {
+  & .contact {
     flex: 1 1 100%;
     margin-top: 5px;
 

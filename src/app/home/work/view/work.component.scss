@@ -9,27 +9,27 @@
 
     & .work {
       flex: 1 1 0%;
-      transition: ease-out 2s;
+      transition: ease-out 200ms;
+      cursor: pointer;
 
       h5 {
         padding: 34px;
         font-weight: 700;
-        text-shadow: 3px 3px 3px #f6d3d38a;
         font-size: 42px;
-        color: #ccc;
-        cursor: pointer;
+        color: inherit;
         // transition: ease-out 1s;
         height: 0;
       }
+
 
       div {
         visibility: hidden;
       }
 
       &.active {
-        flex: 1 1 80% !important;
+        flex: 1 1 70% !important;
         height: 500px;
-        background-color: red !important;
+        background-color: #fdefef;
 
         div {
           visibility: visible;

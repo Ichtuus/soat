@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ViewPricingComponent } from './pricing.component';
+import { ViewContactComponent } from './contact.component';
 
-describe('ViewPricingComponent', () => {
-  let component: ViewPricingComponent;
-  let fixture: ComponentFixture<ViewPricingComponent>;
+describe('ViewContactComponent', () => {
+  let component: ViewContactComponent;
+  let fixture: ComponentFixture<ViewContactComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ViewPricingComponent],
+      declarations: [ViewContactComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ViewPricingComponent);
+    fixture = TestBed.createComponent(ViewContactComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

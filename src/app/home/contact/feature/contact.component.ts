@@ -11,18 +11,18 @@ import {
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
-  selector: 'feature-pricing',
-  templateUrl: './pricing.component.html',
-  styleUrls: ['./pricing.component.scss'],
+  selector: 'feature-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.scss'],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => FeaturePricingComponent),
+      useExisting: forwardRef(() => FeatureContactComponent),
       multi: true,
     },
   ],
 })
-export class FeaturePricingComponent implements AfterViewInit, ControlValueAccessor {
+export class FeatureContactComponent implements AfterViewInit, ControlValueAccessor {
   onChange: any = () => {};
   onTouched: any = () => {};
   selectedService!: any;

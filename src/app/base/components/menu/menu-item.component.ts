@@ -3,9 +3,9 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'base-menu-item',
   template: `
-    <span class="font-medium mr-2 ml-2" *ngFor="let link of links"
-      ><a [href]="link.path">{{ link.name }}</a></span
-    >
+
+  <a *ngFor="let link of links" class="link" [class]="link.name" [href]="link.path">{{ link.name }}</a>
+
   `,
   styleUrls: ['./menu.component.scss'],
 })

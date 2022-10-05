@@ -1,4 +1,4 @@
-import { Component, HostBinding, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'view-expertise',
@@ -7,7 +7,20 @@ import { Component, HostBinding, Input, OnInit } from '@angular/core';
 })
 export class ViewExpertiseComponent implements OnInit {
   ngOnInit(): void {
-    this.isActive = true;
+    this.isActiveIdx = this.expertises.length -1;
+   }
+  
+  expertises = [
+    { title: 'Translation', content: '#about', img: '' },
+    { title: 'Edition', content: '#expertise', img: '' },
+    { title: 'Subtitling', content: '#work', img: '' },
+  ];
+  
+  isActiveIdx!: number;
+
+  activateStyle(index: number) {
+    this.isActiveIdx = index;
   }
-  isActive!: boolean;
 }
+
+

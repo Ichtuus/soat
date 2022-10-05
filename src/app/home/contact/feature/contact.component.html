@@ -1,4 +1,4 @@
-<ul class="list-unstyled">
+<!-- <ul class="list-unstyled">
   <div
     *ngFor="let service of serviceList; let index = index"
     (click)="selectedService = service"
@@ -7,20 +7,20 @@
       {{ service.name }}
     </li>
   </div>
-</ul>
+</ul> -->
 
-<div *ngIf="selectedService" class="price-box">
+<div class="contact-box">
   <div class="box-header">
     <div class="package-type">
-      {{ selectedService.name }}
+      un service
     </div>
-    <div class="price">
-      <span>{{ selectedService.price }} /per hour</span>
+    <div class="contact">
+      <span>j'sais ap</span>
     </div>
   </div>
   <div class="box-body">
     <ul class="list-unstyled">
-      <li>{{ selectedService.desc }}</li>
+      <li>descript</li>
     </ul>
     <div class="small-text">Try Now</div>
     <button class="btn rounded btn-purchase" (click)="onPurchase(selectedService)">Purchase</button>

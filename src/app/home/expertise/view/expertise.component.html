@@ -1,32 +1,15 @@
-<div class="expertise">
-  <p class="exp-item">Translation</p>
+<div (click)="activateStyle(i)" *ngFor="let expertise of expertises; let i = index" class="expertise" [class.active]="i === isActiveIdx">
+  <p class="exp-item">{{ expertise.title }}</p>
   <div>content</div>
-  <!-- <img
-    default="./assets/imgnotfound.png"
-    alt="expertise-img"
-    width="250"
-    height="250"
-  /> -->
 </div>
-<div class="expertise">
-  <p class="exp-item">Edition</p>
-  <div>content</div>
 
+<!-- <div class="expertise"> -->
+  <!-- <p class="exp-item">Translation</p> -->
+  <!-- <div>content</div> -->
   <!-- <img
     default="./assets/imgnotfound.png"
     alt="expertise-img"
     width="250"
     height="250"
   /> -->
-</div>
-<div class="expertise">
-  <p class="exp-item">Subtitling</p>
-  <div>content</div>
-
-  <!-- <img
-    default="./assets/imgnotfound.png"
-    alt="expertise-img"
-    width="250"
-    height="250"
-  /> -->
-</div>
+<!-- </div> -->
